@@ -1,1 +1,1 @@
-Front-end task
+Front-end global task
