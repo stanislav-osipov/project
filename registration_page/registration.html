@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+	<div id="header">
+	</div>
+	<div id="content">
+		<!-- Ссылка вызова модального окна -->
+		<a href="#regWindow">Ссылка для открытия модального окна логина</a>	
+		<!-- Блок модального окна в обёртке -->
+		<div id="regWindow">
+			<div class="window">			
+				<!-- Ссылка для закрытия модального окна -->
+				<a href="#close" class="close" title="Close window">X</a>
+				<div class="form">
+					<h2>Registration</h2>
+					<form action="#">
+						<input type="email" placeholder="Email address" class="width100">
+						<br />
+						<input type="password" placeholder="password" class="width100">
+						<br />
+						<input type="submit" name="signIn" value="Register" class="width100"> 					
+					</form>
+					<p><a href="login.html" title="Registration">Sign In</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+</html>
