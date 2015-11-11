@@ -4,7 +4,7 @@
 	<title> Item list </title>
 	<meta charset="utf-8"">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -15,10 +15,15 @@
 		<span class="logo">
 			Shop
 		</span>
-		<span class="search"> 
-			<input id="search_field" type="edit" size="30" value="Search"> 
+
+		<span class="navigation"> 
+			<img class="navigation_img" src="cart.png" alt="cart"</img>
+			<img class="navigation_img" src="acc.png" alt="acc"</img>
 		</span>
-		<span class="navigation"> </span>
+		
+		<span class="search"> 
+			<input id="search_field" type="text" size="30" value="Search"> 
+		</span>
 	</header>
 	
 	<nav>
@@ -32,6 +37,10 @@
 	</nav>
 	
 	<div class="content_with_menu">
+		
+		<div class="menu_item path view_option"> <a href="item_list_grid.html"> Grid View </a> </div>
+		<div class="clearfix"> </div>
+		
 		<div class="menu_item"> 
 			<a href='item_card.html'>
 				<img class="item_img" src="Section1.png" alt="Item 1">

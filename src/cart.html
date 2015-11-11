@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cart </title>
+	<meta charset="utf-8"">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<header>  
+		<span> 
+			<img class="logo_img" src="logo.png" alt="Logo"</img>
+		</span>
+		<span class="logo">
+			Shop
+		</span>
+
+		<span class="navigation"> 
+			<img class="navigation_img" src="cart.png" alt="cart"</img>
+			<img class="navigation_img" src="acc.png" alt="acc"</img>
+		</span>
+		
+		<span class="search"> 
+			<input id="search_field" type="text" size="30" value="Search"> 
+		</span>
+	</header>
+	
+	<div class="menu cart_summary">
+		<div> Bascet summary </div>
+		<div class="short_description"> (2 items) </div>
+		<hr>
+		<div class="price_summary"> $2555 </div>
+		<div class="clearfix"> </div>
+		<hr>
+		
+		<div class="continue">
+			<input class="add_button summary_button" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
+		</div>
+		
+	</div>
+	
+	<div class="content">
+		
+		<div class="menu_item item_extend cart_item"> 
+			<a href='item_card.html'>
+				<img class="item_img" src="Section1.png" alt="Item 1">
+			</a> 
+			
+			<div class="item_description short_description">
+				<h1> <i> <a href='item_card.html'> Item 1 </a> </i> </h1>
+				
+				<div class="price short_description">
+					$555
+				</div>
+				
+				<hr>
+					<div>
+						Quantity: 
+						<input class="select_quantity" type="number" min="1" max="10" value="1">
+					</div>				
+				<hr>
+				
+				<div class="byu_options">		
+					<div>
+						<input class="add_button remove_button" type="button" value="X">
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="menu_item item_extend cart_item"> 
+			<a href='item_card.html'>
+				<img class="item_img" src="Section1.png" alt="Item 1">
+			</a> 
+			
+			<div class="item_description short_description">
+				<h1> <i> <a href='item_card1.html'> Item 1 </a> </i> </h1>
+				
+				<div class="price short_description">
+					$555
+				</div>
+				
+				<hr>
+					<div>
+						Quantity: 
+						<input class="select_quantity" type="number" min="1" max="10" value="1">
+					</div>				
+				<hr>
+				
+				<div class="byu_options">		
+					<div>
+						<input class="add_button remove_button" type="button" value="X">
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="menu_item item_extend cart_item"> 
+			<a href='item_card.html'>
+				<img class="item_img" src="Section1.png" alt="Item 1">
+			</a> 
+			
+			<div class="item_description short_description">
+				<h1> <i> <a href='item_card.html'> Item 1 </a> </i> </h1>
+				
+				<div class="price short_description">
+					$555
+				</div>
+				
+				<hr>
+					<div>
+						Quantity: 
+						<input class="select_quantity" type="number" min="1" max="10" value="1">
+					</div>				
+				<hr>
+				
+				<div class="byu_options">		
+					<div>
+						<input class="add_button remove_button" type="button" value="X">
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		<div class="menu_item item_extend cart_item"> 
+		
+			<div class="price short_description">
+				<i> Total: $2555 </i>
+				<hr>
+			</div>
+				
+			<div class="continue">
+				<input class="add_button continue_button" type="button" value="Continue shopping" onClick="window.location.href = 'item_list.html';">
+				<input class="add_button continue_button" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
+			</div>
+			
+		</div>
+		
+
+	</div>
+	
+	<footer>
+		<p  class="shop_info"> Email, adress, etc. </p>
+	</footer>
+</body>
+</html>
