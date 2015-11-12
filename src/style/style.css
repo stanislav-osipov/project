@@ -217,6 +217,11 @@ div {
 	border-width: 2px;
 }
 
+.continue
+.summary_button:active {
+	border-color: #FA1;
+}
+
 .menu_item 
 a:link 
 {
@@ -345,6 +350,10 @@ hr{
 	color: #FFF;
 }
 
+.add_button:active {
+	border-color: #FFF;
+}
+
 .remove_button {
 	border-color: #A77;
 	color: #A77;
@@ -361,7 +370,8 @@ hr{
 }
 
 .cards {
-	margin-top: 10px;
+	margin: auto;
+	/*margin-top: 10px;*/
 	width: 700px;
 }
 
@@ -499,6 +509,76 @@ a:hover{
 .item_text {
 	margin: 0;
 	padding: 0;
+}
+
+#loginWindow, #regWindow{
+	background: rgba(0,0,0,.8);
+	display: none;
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	pointer-events: none;
+	z-index: 99999;
+}
+
+#loginWindow:target, #regWindow:target  {
+	display: block;
+	pointer-events: auto;
+}
+
+.window {
+	background: radial-gradient(ellipse at center, #ACF, #48B);
+	border-width: 3px;
+	border-style: dashed;
+	border-color: rgba(0,0,0,.8);
+	border-radius: 20px;
+	padding: 0 24px 24px;
+	/* Выравнивание модального окна по центру */
+	position: absolute;
+	left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+	/* --- */
+	width: 300px;
+	text-align: center;
+}
+
+.window
+h2 {
+	color: #FFF;
+	text-shadow: #000 1px 0px, #000 1px 1px, #000 0px 1px, #000 -1px 1px, #000 -1px 0px, #000 -1px -1px, #000 0px -1px, #000 1px -1px;
+}
+
+.reg_text:hover {
+	text-shadow: #000 1px 0px, #000 1px 1px, #000 0px 1px, #000 -1px 1px, #000 -1px 0px, #000 -1px -1px, #000 0px -1px, #000 1px -1px;
+}
+
+
+.reg_check {
+	color: #FFF;
+}
+
+.reg_ref:visited {
+	color: #FFF;
+}
+
+.reg_ref:link {
+	color: #FFF;
+}
+
+.close {
+	border-radius: 7px;
+	color: #000;
+	position: absolute;
+	top: 5px; right: 3px;
+	text-align: center;
+	width: 24px;
+}
+
+.reg_input {
+	width: 100%;
+	border-radius: 15px;
+	text-align: center;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
 .clearfix:before,
