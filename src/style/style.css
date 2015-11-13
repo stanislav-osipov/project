@@ -17,6 +17,8 @@ header {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	min-width: 980px;
+	min-width: 100%;
 	height: 75px;
 	background-color: #48B;
 	border-style: solid;
@@ -44,7 +46,7 @@ nav {
 
 /* todo */
 footer {
-	width: 100%;
+	min-width: 100%;
 	height: 75px;
 	background-color: #48B;
 	text-align: center;
@@ -105,6 +107,8 @@ footer {
 	margin-left: 150px;
 	text-align: center;
 	min-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
 }
 
 .content_with_menu{
@@ -137,7 +141,7 @@ footer {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	overflow: hidden;
-	/*max-width: 60%;*/
+	/*max-width: 70%;*/
 	width: 600px;
 }
 
@@ -191,7 +195,8 @@ div {
 	margin: 20px auto;
 	/*float: left;*/
 	clear: both;
-	width: 500px;
+	max-width: 75%;
+	min-width: 500px;
 }
 
 .cart_summary {
@@ -203,13 +208,19 @@ div {
 	border-width: 3px;
 	border-color: #48B;
 	border-radius: 10px;
-	left: 0;
-	float: left;
+	top: 10px;
+	right: 10px;
+	/*float: right;*/
 	background-color: #269;
 	/*overflow-y: auto;*/
 	z-index: 999;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	color: #FFF;
+}
+
+.cart_content {
+	margin-left: 5px;
+	margin-right: 100px;
 }
 
 .price_summary {
@@ -386,8 +397,8 @@ hr{
 	background-color: #EDD;
 	width: 40px;
 	border-radius: 20px;
-	/*float: right;*/
-	margin-top: 50px;
+	float: right;
+	margin-top: 15px;
 	margin-left: 200px;
 }
 
@@ -451,7 +462,9 @@ hr {
 }
 
 .continue {
-	display: table;
+	/*display: table;*/
+	text-align: center;
+	width: 100%;
 }
 
 .continue_button {
@@ -459,7 +472,12 @@ hr {
 	/*float: right;*/
 	font-size: 17px;
 	width: 170px;
-	margin-left: 60px;
+	/*margin-left: 60px;*/
+}
+
+.continue
+input:first-child {
+	margin-right: 20px;
 }
 
 .social {
@@ -494,6 +512,12 @@ li {
 .menu 
 li {
 	margin-top: 10px;
+}
+
+.menu 
+.now 
+a:visited{
+	color: #FA1;
 }
 
 .menu_img{
@@ -613,6 +637,168 @@ h2 {
 	padding: 5px;
 	box-sizing: border-box;
 }
+
+/**************** devices ******************/
+
+@media only screen and (max-device-width: 480px) {
+nav {
+	width: 0px;
+	overflow: hidden;
+	height: 0px;
+	padding: 0;
+	border: 0;
+}
+
+.content, .content_with_menu {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+header {
+	min-width: 300px;
+}
+
+.logo,
+.search,
+.cart_summary {
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+	padding: 0;
+	border: 0;
+}
+
+.navigation {
+	margin-right: 10px;
+}
+
+.cart_content{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.menu_item {
+	margin-right: 5px;
+	margin-bottom: 20px;
+	/*padding: 5px;*/
+	
+}
+
+.short_description {
+	width: 60%;
+}
+
+.item_card_images  {
+	/*width: 100%;*/
+	display: block;
+	clear: both;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.big_item_img {
+	width: 100%;
+	height: 100%;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.item_description, .item_extend, .short_description, .cart_item{
+	/*display: block;*/
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 300px;
+	
+	/*clear: both;*/
+	margin-left: 5px;
+	margin-right: 5px;
+	
+	padding: 5px;
+	
+	max-width: 100%;
+}
+
+.item_extend, .item_description, .address_form  {
+	width: auto;
+	clear: both;
+}
+
+/*** vvvvv ***/
+
+.address_form {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.short_description {
+	box-sizing: content-box;
+	min-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.continue input:first-child {
+	margin-right: 0;
+}
+
+.scroll_group_images {
+	max-width: 400px;
+}
+
+img.scroll {
+	margin: 0;
+	width: 0;
+	height: 0;
+}
+
+.to_pay_button {
+	margin-left: 0;
+}
+
+.item_img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	/*max-width: 300px;
+	max-height: 300px;*/
+	box-sizing: border-box;
+}
+
+.clearfix {
+	width: 100%;
+}
+
+.window  {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.cards {
+	width: auto;
+}
+
+.card_face {
+	box-sizing: border-box;
+	width: auto;
+	display: block;
+	margin: 100px 5px 10px 5px;
+	position: static;
+}
+
+.card_back {
+	margin-top: 10px;
+}
+
+}
+
+@media only screen and (max-device-width: 960px) {
+
+}
+
+/* end devices */
 
 .clearfix:before,
 .clearfix:after {
