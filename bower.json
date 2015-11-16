@@ -1,0 +1,32 @@
+{
+  "name": "frontend-global-task",
+  "description": "global task",
+  "main": "index.js",
+  "authors": [
+    "Stanislav Osipov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frontend"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}
