@@ -7,158 +7,164 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
 	//= header.html
 	
-	<nav>
-		<ul class="menu">
-			<li class="now"> <a href='categories.html'> <img class="menu_img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr> </li>
-			<li> <a href='categories1.html'> <img class="menu_img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
-		</ul>
-	</nav>
+	<div class="page__body-wrapper">
 	
-	<div class="content_with_menu">
+		<div class="body-wrapper__content-wrapper">
 		
-		<div class="menu_item path view_option"> <a href="item_list.html"> List View </a> </div>
-		<div class="clearfix"> </div>
+			<nav id="nav" class="page__menu">
+				<div class="hidden_menu"> <a href="#nav" title="show navigation">=</a> </div>
+				<ul class="menu">
+					<li class="now"> <a href='categories.html'> <img class="menu_img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr> </li>
+					<li> <a href='categories1.html'> <img class="menu_img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
+				</ul>
+			</nav>
 		
-		<div class="menu_item item_extend"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
-			</a> 
-			
-			<div class="item_description short_description">
-			<h1> <i> <a href='item_card.html'> Nice ball </a> </i> </h1>
-			
-			<div class="price short_description">
-				Price: $555
-			</div>
-			
-			<hr>
-			<div> 
-				This is a very nice ball. Official size and weight. Round...   
-			</div>
-			<hr>
+			<div class="content-wrapper__content">
 				
-			<div class="byu_options">		
-				<div>
-					<input class="add_button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
-				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="menu_item item_extend"> 
-			<a href='item_card1.html'>
-				<img class="item_img" src="images/categories/volleyball/ball_beach.jpg" alt="Item 2">
-			</a> 
-			
-			<div class="item_description short_description">
-			<h1> <i> <a href='item_card1.html'> Beach ball </a> </i> </h1>
-			
-			<div class="price short_description">
-				Price: $444
-			</div>
-			
-			<hr>
-			<div> 
-				This is a very nice beach ball. Official size and weight. Round...  
-			</div>
-			<hr>
+				<div class="content__item path view_option"> <a href="item_list.html"> List View </a> </div>
+				<div class="clearfix"> </div>
 				
-			<div class="byu_options">		
-				<div>
-					<input class="add_button" type="button" value="Add to cart">
+				<div class="content__item item_extend"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
+					</a> 
+					
+					<div class="item_description short_description">
+					<h1> <i> <a href='item_card.html'> Nice ball </a> </i> </h1>
+					
+					<div class="price short_description">
+						Price: $555
+					</div>
+					
+					<hr>
+					<div> 
+						This is a very nice ball. Official size and weight. Round...   
+					</div>
+					<hr>
+						
+					<div class="byu_options">		
+						<div>
+							<input class="add_button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="menu_item item_extend"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 3">
-			</a> 
-			
-			<div class="item_description short_description">
-			<h1> <i> <a href='item_card.html'> Nice shoes </a> </i> </h1>
-			
-			<div class="price short_description">
-				Price: $333
-			</div>
-			
-			<hr>
-			<div> 
-				This is a very nice shoes. Little weight and high durability...   
-			</div>
-			<hr>
+				</div>
 				
-			<div class="byu_options">		
-				<div>
-					<input class="add_button" type="button" value="Add to cart">
+				<div class="content__item item_extend"> 
+					<a href='item_card1.html'>
+						<img class="item__image" src="images/categories/volleyball/ball_beach.jpg" alt="Item 2">
+					</a> 
+					
+					<div class="item_description short_description">
+					<h1> <i> <a href='item_card1.html'> Beach ball </a> </i> </h1>
+					
+					<div class="price short_description">
+						Price: $444
+					</div>
+					
+					<hr>
+					<div> 
+						This is a very nice beach ball. Official size and weight. Round...  
+					</div>
+					<hr>
+						
+					<div class="byu_options">		
+						<div>
+							<input class="add_button" type="button" value="Add to cart">
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="menu_item item_extend"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/knee_pad.jpg" alt="Item 1">
-			</a> 
-			
-			<div class="item_description short_description">
-			<h1> <i> <a href='item_card.html'> Nice knee pads </a> </i> </h1>
-			
-			<div class="price short_description">
-				Price: $111
-			</div>
-			
-			<hr>
-			<div> 
-				This is a very nice knee pads. Little weight and high durability......   
-			</div>
-			<hr>
+				</div>
 				
-			<div class="byu_options">		
-				<div>
-					<input class="add_button" type="button" value="Add to cart">
+				<div class="content__item item_extend"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 3">
+					</a> 
+					
+					<div class="item_description short_description">
+					<h1> <i> <a href='item_card.html'> Nice shoes </a> </i> </h1>
+					
+					<div class="price short_description">
+						Price: $333
+					</div>
+					
+					<hr>
+					<div> 
+						This is a very nice shoes. Little weight and high durability...   
+					</div>
+					<hr>
+						
+					<div class="byu_options">		
+						<div>
+							<input class="add_button" type="button" value="Add to cart">
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="menu_item item_extend"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/beach_net.jpg" alt="Item 5">
-			</a> 
-			
-			<div class="item_description short_description">
-			<h1> <i> <a href='item_card.html'> Nice beach net </a> </i> </h1>
-			
-			<div class="price short_description">
-				Price: $1111
-			</div>
-			
-			<hr>
-			<div> 
-				This is a very nice beach net. Yellow.   
-			</div>
-			<hr>
+				</div>
 				
-			<div class="byu_options">		
-				<div>
-					<input class="add_button" type="button" value="Add to cart">
+				<div class="content__item item_extend"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/knee_pad.jpg" alt="Item 1">
+					</a> 
+					
+					<div class="item_description short_description">
+					<h1> <i> <a href='item_card.html'> Nice knee pads </a> </i> </h1>
+					
+					<div class="price short_description">
+						Price: $111
+					</div>
+					
+					<hr>
+					<div> 
+						This is a very nice knee pads. Little weight and high durability......   
+					</div>
+					<hr>
+						
+					<div class="byu_options">		
+						<div>
+							<input class="add_button" type="button" value="Add to cart">
+						</div>
+					</div>
 				</div>
+				</div>
+				
+				<div class="content__item item_extend"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/beach_net.jpg" alt="Item 5">
+					</a> 
+					
+					<div class="item_description short_description">
+					<h1> <i> <a href='item_card.html'> Nice beach net </a> </i> </h1>
+					
+					<div class="price short_description">
+						Price: $1111
+					</div>
+					
+					<hr>
+					<div> 
+						This is a very nice beach net. Yellow.   
+					</div>
+					<hr>
+						
+					<div class="byu_options">		
+						<div>
+							<input class="add_button" type="button" value="Add to cart">
+						</div>
+					</div>
+				</div>
+				</div>	
 			</div>
 		</div>
-		</div>
 		
-		
-		
+		//= footer.html
 	</div>
 	
 	
@@ -199,8 +205,6 @@
 			</div>
 		</div>
 	</div>
-	
-	//= footer.html
 	
 </body>
 </html>

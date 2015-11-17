@@ -7,40 +7,44 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
 	//= header.html
 	
-	<div class="content cards">
+	<div class="page__body-wrapper">
+		<div class="body-wrapper__content-wrapper">
+		
+			<div class="content-wrapper__content cards">
 
-		<div class="card_face">  
-			<div> 
-				<input class="cards_input" type="text"> 
-			</div>
-			
-			<div> 
-				<input class="cards_input cards_date" type="month"> 
-			</div>
+				<div class="card_face">  
+					<div> 
+						<input class="cards_input" type="text"> 
+					</div>
 					
-			<div> 
-				<input class="cards_input cards_username" type="text"> 
+					<div> 
+						<input class="cards_input cards_date" type="month"> 
+					</div>
+							
+					<div> 
+						<input class="cards_input cards_username" type="text"> 
+					</div>
+					
+				</div>
+				
+				<div class="card_face card_back"> 
+					<div>
+						<input class="cards_input cards_pin" type="text">
+					</div>
+				</div>
 			</div>
 			
-		</div>
-		
-		<div class="card_face card_back"> 
 			<div>
-				<input class="cards_input cards_pin" type="text">
+				<input class="add_button to_pay_button" type="button" value="Finish" onClick="window.location.href = 'categories.html';">
 			</div>
-		</div>
 		
-		<div>
-			<input class="add_button to_pay_button" type="button" value="Finish" onClick="window.location.href = 'categories.html';">
 		</div>
-		
+		//= footer.html
 	</div>
-
-	//= footer.html
 	
 </body>
 </html>

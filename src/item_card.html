@@ -7,69 +7,74 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
 	//= header.html
 	
-	<div class="content item_card">
+	<div class="page__body-wrapper">
 	
-		<div class="menu_item path"> <a href="item_list.html"> Volleyball gear </a> | Nice ball </div>
-		<div class="card"> 
-		
-		<div class="item_card_images">
-			<img class="big_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="Item_big">
-			<div class="scroll_group_images">
-				<img class="scroll" src="images/navigation/left.png" alt="left">
-				<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-				<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-				<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-				<img class="scroll" src="images/navigation/right.png" alt="right">
-			</div>
-		</div>
-		
-		<div class="menu_item item_description">
-			<div>
-				<div class="item_name"> <h1> <i> Nice ball </i> </h1> </div>
-				<div>
-					<img class="star_img" src="images/navigation/star1.png" alt="star1">
-					<img class="star_img" src="images/navigation/star1.png" alt="star1">
-					<img class="star_img" src="images/navigation/star1.png" alt="star1">
-					<img class="star_img" src="images/navigation/star1.png" alt="star1">
-					<img class="star_img" src="images/navigation/star0.png" alt="star0">
-				</div>
-			</div>
-			<hr>
-			<div> 
-				This is a very nice ball. Official size and weight. Round. Perfect for novice and professional. Colors: blue and yellow. 
-			</div>
-			<hr>
+		<div class="content__item path"> <a href="item_list.html"> Volleyball gear </a> | Nice ball </div>
+	
+		<div class="body-wrapper__content-wrapper item_card">
+
+			<div class="content-wrapper__content">
 			
-			<div class="price">
-				Price: $555
-			</div>
-			
-			<div class="byu_options">
-				<div>
-					Quantity: 
-					<input class="select_quantity" type="number" min="1" max="10" value="1">
+				<div class="item_card_images">
+					<img class="big_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="Item_big">
+					<div class="scroll_group_images">
+						<img class="scroll" src="images/navigation/left.png" alt="left">
+						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="scroll" src="images/navigation/right.png" alt="right">
+					</div>
 				</div>
 				
-				<div>
-					<input class="add_button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
+				<div class="content__item item_description">
+					<div>
+						<div class="item_name"> <h1> <i> Nice ball </i> </h1> </div>
+						<div>
+							<img class="star_img" src="images/navigation/star1.png" alt="star1">
+							<img class="star_img" src="images/navigation/star1.png" alt="star1">
+							<img class="star_img" src="images/navigation/star1.png" alt="star1">
+							<img class="star_img" src="images/navigation/star1.png" alt="star1">
+							<img class="star_img" src="images/navigation/star0.png" alt="star0">
+						</div>
+					</div>
+					<hr>
+					<div> 
+						This is a very nice ball. Official size and weight. Round. Perfect for novice and professional. Colors: blue and yellow. 
+					</div>
+					<hr>
+					
+					<div class="price">
+						Price: $555
+					</div>
+					
+					<div class="byu_options">
+						<div>
+							Quantity: 
+							<input class="select_quantity" type="number" min="1" max="10" value="1">
+						</div>
+						
+						<div>
+							<input class="add_button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
+						</div>
+					</div>
+					
+					<div class="social">
+						<img class="social_img" src="images/social/Facebook.png" alt="social">
+						<img class="social_img" src="images/social/Google+.png" alt="social">
+						<img class="social_img" src="images/social/RSS.png" alt="social">
+						<img class="social_img" src="images/social/Share.png" alt="social">
+					</div>
+
 				</div>
+			
 			</div>
 			
-			<div class="social">
-				<img class="social_img" src="images/social/Facebook.png" alt="social">
-				<img class="social_img" src="images/social/Google+.png" alt="social">
-				<img class="social_img" src="images/social/RSS.png" alt="social">
-				<img class="social_img" src="images/social/Share.png" alt="social">
-			</div>
-
 		</div>
-		
-		</div>
-		
+		//= footer.html
 	</div>
 	
 	
@@ -110,8 +115,6 @@
 			</div>
 		</div>
 	</div>
-	
-	//= footer.html
 	
 </body>
 </html>

@@ -7,36 +7,43 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
 
 	//= header.html
 	
-	<div class="content">
-		<div class="menu_item address_form">
-			<h1> Shipping address </h1>
-			<div> Country <input class="address_input" type="text"> </div>
-			<div> City <input class="address_input" type="text"> </div>
-			<div> Address <input class="address_input" type="text"> </div>
-			<div> ZIP <input class="address_input" type="text"> </div>
-			<div> <input type="checkbox"> My shipping address is the same </div>
-		</div>
-		
-		<div class="menu_item address_form">
-			<h1> Billing address </h1>
-			<div> Country <input class="address_input" type="text"> </div>
-			<div> City <input class="address_input" type="text"> </div>
-			<div> Address <input class="address_input" type="text"> </div>
-			<div> ZIP <input class="address_input" type="text"> </div>
-			<div> <input type="checkbox"> My billing address is the same </div>
-		</div>
-		
-		<div>
-			<input class="add_button to_pay_button" type="button" value="Continue" onClick="window.location.href = 'card.html';">
-		</div>
-		
-	</div>
+	<div class="page__body-wrapper">
+		<div class="body-wrapper__content-wrapper">
+	
+			<div class="body-wrapper__content-wrapper">
+				<div class="content__item address_form">
+					<h1> Shipping address </h1>
+					<div> Country <input class="address_input" type="text"> </div>
+					<div> City <input class="address_input" type="text"> </div>
+					<div> Address <input class="address_input" type="text"> </div>
+					<div> ZIP <input class="address_input" type="text"> </div>
+					<div> <input type="checkbox"> My shipping address is the same </div>
+				</div>
+				
+				<div class="content__item address_form">
+					<h1> Billing address </h1>
+					<div> Country <input class="address_input" type="text"> </div>
+					<div> City <input class="address_input" type="text"> </div>
+					<div> Address <input class="address_input" type="text"> </div>
+					<div> ZIP <input class="address_input" type="text"> </div>
+					<div> <input type="checkbox"> My billing address is the same </div>
+				</div>
+				
 
-	//= footer.html
+				
+			</div>
+			
+			<div>
+				<input class="add_button to_pay_button" type="button" value="Continue" onClick="window.location.href = 'card.html';">
+			</div>
+		
+		</div>
+		//= footer.html
+	</div>
 	
 </body>
 </html>
