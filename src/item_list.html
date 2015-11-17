@@ -2,107 +2,101 @@
 <html>
 <head>
 	<title> Item list </title>
-	<meta charset="utf-8"">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-	<header>  
-		<div> 
-			<img class="logo_img" src="images/navigation/logo.png" alt="Logo"</img>
-		</div>
-		<div class="logo">
-			<i> Sports gear e-shop </i>
-		</div>
+<body class="page">
 
-		<div class="navigation"> 
-			<a href="cart.html"> <img class="navigation_img" src="images/navigation/cart.png" alt="cart"</img> </a>
-			<a href="#loginWindow"> <img class="navigation_img" src="images/navigation/account.png" alt="acc"</img> </a>
-		</div>
-		
-		<div class="search"> 
-			<input id="search_field" type="text" size="30" placeholder="Search"> 
-		</div>
-	</header>
+	//= header.html
 	
-	<nav id="nav">
-		<div class="hidden_menu"> <a href="#nav" title="show navigation">=</a> </div>
-		<ul class="menu">
-			<li class="now"> <a href='categories.html'> <img class="menu_img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr> </li>
-			<li> <a href='categories1.html'> <img class="menu_img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr> </li>
-			<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
-		</ul>
-	</nav>
 	
-	<div class="content_with_menu">
-		
-		<div class="menu_item path view_option"> <a href="item_list_grid.html"> Grid View </a> </div>
-		<div class="clearfix"> </div>
-		
-		<div class="menu_item"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
-				
-				<ul class="item_text"> 
-					<li> Nice ball </li>
-					<li> $555 </li>
+	<div class="page__body-wrapper">
+	
+		<div class="body-wrapper__content-wrapper">
+			<nav id="nav" class="page__menu">
+				<div class="hidden_menu"> <a href="#nav" title="show navigation">=</a> </div>
+				<ul class="menu">
+					<li class="now"> <a href='categories.html'> <img class="menu_img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr> </li>
+					<li> <a href='categories1.html'> <img class="menu_img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr> </li>
+					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
 				</ul>
+			</nav>
+	
+			<div class="content-wrapper__content">
+			
+				<div class="content__item path view_option"> <a href="item_list_grid.html"> Grid View </a> </div>
+				<div class="clearfix"> </div>
 				
-			</a> 
+				<div class="content__item"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
+						
+						<ul class="item__text"> 
+							<li> Nice ball </li>
+							<li> $555 </li>
+						</ul>
+						
+					</a> 
+				</div>
+				
+				<div class="content__item"> 
+					<a href='item_card1.html'>
+						<img class="item__image" src="images/categories/volleyball/ball_beach.jpg" alt="Item 2">
+						
+						<ul class="item__text"> 
+							<li> Beach ball</li>
+							<li> $444 </li>
+						</ul>
+						
+					</a> 
+				</div>
+				
+				<div class="content__item"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 3">
+						
+						<ul class="item__text"> 
+							<li> Nice shoes </li>
+							<li> $333 </li>
+						</ul>
+						
+					</a> 
+				</div>
+				
+				<div class="content__item"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/knee_pad.jpg" alt="Item 4">
+						
+						<ul class="item__text"> 
+							<li> Nice knee pads </li>
+							<li> $111 </li>
+						</ul>
+						
+					</a> 
+				</div>
+				
+				<div class="content__item"> 
+					<a href='item_card.html'>
+						<img class="item__image" src="images/categories/volleyball/beach_net.jpg" alt="Item 5">
+						
+						<ul class="item__text"> 
+							<li> Nice beach net </li>
+							<li> $1111 </li>
+						</ul>
+						
+					</a> 
+				</div>
+			</div>
+		
 		</div>
 		
-		<div class="menu_item"> 
-			<a href='item_card1.html'>
-				<img class="item_img" src="images/categories/volleyball/ball_beach.jpg" alt="Item 2">
-				
-				<ul class="item_text"> 
-					<li> Beach ball</li>
-					<li> $444 </li>
-				</ul>
-				
-			</a> 
-		</div>
-		
-		<div class="menu_item"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 3">
-				
-				<ul class="item_text"> 
-					<li> Nice shoes </li>
-					<li> $333 </li>
-				</ul>
-				
-			</a> 
-		</div>
-		
-		<div class="menu_item"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/knee_pad.jpg" alt="Item 4">
-				
-				<ul class="item_text"> 
-					<li> Nice knee pads </li>
-					<li> $111 </li>
-				</ul>
-				
-			</a> 
-		</div>
-		
-		<div class="menu_item"> 
-			<a href='item_card.html'>
-				<img class="item_img" src="images/categories/volleyball/beach_net.jpg" alt="Item 5">
-				
-				<ul class="item_text"> 
-					<li> Nice beach net </li>
-					<li> $1111 </li>
-				</ul>
-				
-			</a> 
-		</div>
-		
+		//= footer.html
+
 	</div>
 	
 	
@@ -145,9 +139,5 @@
 	</div>
 	
 	
-	<footer>
-		<p  class="shop_info"> Stanislav_Osipov@epam.com, </p> 
-		<p  class="shop_info"> cell: +7 951 2064256 </p> 
-	</footer>
 </body>
 </html>
