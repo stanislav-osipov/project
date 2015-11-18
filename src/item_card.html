@@ -11,28 +11,28 @@
 
 	//= header.html
 	
-	<div class="page__body-wrapper">
+	<div class="body-wrapper">
 	
-		<div class="content__item path"> <a href="item_list.html"> Volleyball gear </a> | Nice ball </div>
+		<div class="path"> <a class="path__link" href="item_list.html"> Volleyball gear </a> | Nice ball </div>
 	
-		<div class="body-wrapper__content-wrapper item_card">
+		<div class="content-wrapper">
 
-			<div class="content-wrapper__content">
+			<div class="content page__content">
 			
-				<div class="item_card_images">
-					<img class="big_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="Item_big">
-					<div class="scroll_group_images">
-						<img class="scroll" src="images/navigation/left.png" alt="left">
-						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-						<img class="small_item_img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
-						<img class="scroll" src="images/navigation/right.png" alt="right">
+				<div class="content__card-images">
+					<img class="card-images__big-img" src="images/categories/volleyball/ball_mik.jpg" alt="Item_big">
+					<div class="card-images__scroll-images-group">
+						<img class="card-images__scroll" src="images/navigation/left.png" alt="left">
+						<img class="card-images__small-img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="card-images__small-img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="card-images__small-img" src="images/categories/volleyball/ball_mik.jpg" alt="small_item">
+						<img class="card-images__scroll" src="images/navigation/right.png" alt="right">
 					</div>
 				</div>
 				
-				<div class="content__item item_description">
+				<div class="item content__item item__description content__item--in-card">
 					<div>
-						<div class="item_name"> <h1> <i> Nice ball </i> </h1> </div>
+						<div class="item__big-name"> <h1> <i> Nice ball </i> </h1> </div>
 						<div>
 							<img class="star_img" src="images/navigation/star1.png" alt="star1">
 							<img class="star_img" src="images/navigation/star1.png" alt="star1">
@@ -51,14 +51,14 @@
 						Price: $555
 					</div>
 					
-					<div class="byu_options">
+					<div class="item__byu-options">
 						<div>
 							Quantity: 
-							<input class="select_quantity" type="number" min="1" max="10" value="1">
+							<input class="select-quantity" type="number" min="1" max="10" value="1">
 						</div>
 						
 						<div>
-							<input class="add_button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
+							<input class="add-button" type="button" value="Add to cart" onClick="window.location.href = 'cart.html';">
 						</div>
 					</div>
 					
@@ -91,7 +91,7 @@
 					<br />
 					<input type="checkbox" name="remember" value="true" checked> <span class="reg_check">remember me</span>
 					<br />
-					<input type="submit" name="signIn" value="Sign In" class="reg_input add_button"> 					
+					<input type="submit" name="signIn" value="Sign In" class="reg_input add-button"> 					
 				</form>
 				<p class="reg_text"><a href="#regWindow" title="Registration" class="reg_ref">register</a></p>
 			</div>
@@ -109,7 +109,7 @@
 					<br />
 					<input type="password" placeholder="password" class="reg_input">
 					<br />
-					<input type="submit" name="signIn" value="Register" class="reg_input add_button"> 					
+					<input type="submit" name="signIn" value="Register" class="reg_input add-button"> 					
 				</form>
 				<p class="reg_text"><a href="#loginWindow" title="Login" class="reg_ref">Sign In</a></p>
 			</div>

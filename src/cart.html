@@ -11,48 +11,46 @@
 
 	//= header.html
 	
-	<div class="page__body-wrapper">
+	<div class="body-wrapper">
 	
-		<div class="body-wrapper__content-wrapper">
+		<div class="content-wrapper">
 	
-			<div class="menu cart_summary">
+			<div class="menu menu--in-cart page__menu page__menu--in-cart">
 				<div> Bascet summary </div>
-				<div class="short_description"> (3 items) </div>
-				<hr>
-				<div class="price_summary"> $2555 </div>
-				<div class="clearfix"> </div>
-				<hr>
-				
-				<div class="continue">
-					<input class="add_button summary_button" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
+				<div class="item__description--short"> (3 items) </div>
+				<hr class="menu__line menu__line--in-cart">
+				<div class="price--in-summary"> $2555 </div>
+				<hr class="menu__line menu__line--in-cart">
+				<div class="continue continue--in-summary">
+					<input class="add-button add-button--in-summary" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
 				</div>
 				
 			</div>
 			
-			<div class="content-wrapper__content cart_content">
+			<div class="content page__content">
 				
-				<div class="content__item item_extend cart_item"> 
-					<a href='item_card.html'>
+				<div class="item content__item content__item--extend cart_item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
 					</a> 
 					
-					<div class="item_description short_description">
-						<h1> <i> <a href='item_card.html'> Nice ball </a> </i> </h1>
+					<div class="item__description item__description--short">
+						<h1> <i> <a class="item__link" href='item_card.html'> Nice ball </a> </i> </h1>
 						
-						<div class="price short_description">
+						<div class="item__price">
 							$555
 						</div>
 						
 						<hr>
 							<div>
 								Quantity: 
-								<input class="select_quantity" type="number" min="1" max="10" value="1">
+								<input class="select-quantity" type="number" min="1" max="10" value="1">
 							</div>				
 						<hr>
 						
-						<div class="byu_options">		
+						<div class="item__byu-options">		
 							<div>
-								<input class="add_button remove_button" type="button" value="X">
+								<input class="add-button remove_button" type="button" value="X">
 							</div>
 						</div>
 						
@@ -60,28 +58,28 @@
 					
 				</div>
 				
-				<div class="content__item item_extend cart_item"> 
-					<a href='item_card.html'>
+				<div class="item content__item content__item--extend cart_item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 1">
 					</a> 
 					
-					<div class="item_description short_description">
-						<h1> <i> <a href='item_card1.html'> Nice shoes </a> </i> </h1>
+					<div class="item__description item__description--short">
+						<h1> <i> <a class="item__link" href='item_card1.html'> Nice shoes </a> </i> </h1>
 						
-						<div class="price short_description">
+						<div class="item__price">
 							$333
 						</div>
 						
 						<hr>
 							<div>
 								Quantity: 
-								<input class="select_quantity" type="number" min="1" max="10" value="1">
+								<input class="select-quantity" type="number" min="1" max="10" value="1">
 							</div>				
 						<hr>
 						
-						<div class="byu_options">		
+						<div class="item__byu-options">		
 							<div>
-								<input class="add_button remove_button" type="button" value="X">
+								<input class="add-button remove_button" type="button" value="X">
 							</div>
 						</div>
 						
@@ -89,28 +87,28 @@
 					
 				</div>
 				
-				<div class="content__item item_extend cart_item"> 
-					<a href='item_card.html'>
+				<div class="item content__item content__item--extend cart_item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/knee_pad.jpg" alt="Item 1">
 					</a> 
 					
-					<div class="item_description short_description">
-						<h1> <i> <a href='item_card.html'> Nice knee pads </a> </i> </h1>
+					<div class="item__description item__description--short">
+						<h1> <i> <a class="item__link" href='item_card.html'> Nice knee pads </a> </i> </h1>
 						
-						<div class="price short_description">
+						<div class="item__price">
 							$111
 						</div>
 						
 						<hr>
 							<div>
 								Quantity: 
-								<input class="select_quantity" type="number" min="1" max="10" value="1">
+								<input class="select-quantity" type="number" min="1" max="10" value="1">
 							</div>				
 						<hr>
 						
-						<div class="byu_options">		
+						<div class="item__byu-options">		
 							<div>
-								<input class="add_button remove_button" type="button" value="X">
+								<input class="add-button remove_button" type="button" value="X">
 							</div>
 						</div>
 						
@@ -119,16 +117,16 @@
 				</div>
 				
 				
-				<div class="content__item item_extend cart_item"> 
+				<div class="item content__item content__item--extend cart_item"> 
 				
-					<div class="price short_description">
+					<div class="item__price">
 						<i> Total: $2555 </i>
 						<hr>
 					</div>
 						
 					<div class="continue">
-						<input class="add_button continue_button" type="button" value="Continue shopping" onClick="window.location.href = 'item_list.html';">
-						<input class="add_button continue_button" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
+						<input class="add-button continue_button" type="button" value="Continue shopping" onClick="window.location.href = 'item_list.html';">
+						<input class="add-button continue_button" type="button" value="Proceed to chekout" onClick="window.location.href = 'address_form.html';">
 					</div>
 					
 				</div>

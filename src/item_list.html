@@ -12,28 +12,27 @@
 	//= header.html
 	
 	
-	<div class="page__body-wrapper">
+	<div class="body-wrapper">
 	
-		<div class="body-wrapper__content-wrapper">
-			<nav id="nav" class="page__menu">
-				<div class="hidden_menu"> <a href="#nav" title="show navigation">=</a> </div>
-				<ul class="menu">
-					<li class="now"> <a href='categories.html'> <img class="menu_img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr> </li>
-					<li> <a href='categories1.html'> <img class="menu_img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr> </li>
-					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr> </li>
-					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr> </li>
-					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr> </li>
-					<li> <a href='categories.html'> <img class="menu_img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
+		<div class="content-wrapper">
+			<nav id="nav" class="menu menu page__menu">
+				<div class="menu__hidden-mark"> <a href="#nav" title="show navigation">=</a> </div>
+				<ul class="menu__list">
+					<li class="now"> <a class="list__link" href='categories.html'> <img class="list__img" src="images/navigation/rugby.png" alt="Category 1"> Volleyball gear </a> <hr class="menu__line"> </li>
+					<li> <a class="list__link" href='categories1.html'> <img class="list__img" src="images/navigation/basketball.png" alt="Category 2"> Basketball gear </a> <hr class="menu__line"> </li>
+					<li> <a class="list__link" href='categories.html'> <img class="list__img" src="images/navigation/soccer.png" alt="Category 3"> Football gear </a> <hr class="menu__line"> </li>
+					<li> <a class="list__link" href='categories.html'> <img class="list__img" src="images/navigation/dumbbell.png" alt="Category 4"> Gym gear </a> <hr class="menu__line"> </li>
+					<li> <a class="list__link" href='categories.html'> <img class="list__img" src="images/navigation/bicycle.png" alt="Category 5"> Cycling gear </a> <hr class="menu__line"> </li>
+					<li> <a class="list__link" href='categories.html'> <img class="list__img" src="images/navigation/running.png" alt="Category 6"> Athletic gear </a> </li>	
 				</ul>
 			</nav>
 	
-			<div class="content-wrapper__content">
-			
-				<div class="content__item path view_option"> <a href="item_list_grid.html"> Grid View </a> </div>
-				<div class="clearfix"> </div>
-				
-				<div class="content__item"> 
-					<a href='item_card.html'>
+			<div class="content page__content">
+				<div class="content__view-option">
+					<div class="view-option"> <a class="item__link" href="item_list_grid.html"> Grid View </a> </div>
+				</div>
+				<div class="item content__item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/ball_mik.jpg" alt="Item 1">
 						
 						<ul class="item__text"> 
@@ -45,8 +44,8 @@
 				</div>
 				
 				
-				<div class="content__item"> 
-					<a href='item_card1.html'>
+				<div class="item content__item"> 
+					<a class="item__link" href='item_card1.html'>
 						<img class="item__image" src="images/categories/volleyball/ball_beach.jpg" alt="Item 2">
 						
 						<ul class="item__text"> 
@@ -57,8 +56,8 @@
 					</a> 
 				</div>
 				
-				<div class="content__item"> 
-					<a href='item_card.html'>
+				<div class="item content__item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/vol_shoes.jpg" alt="Item 3">
 						
 						<ul class="item__text"> 
@@ -69,8 +68,8 @@
 					</a> 
 				</div>
 				
-				<div class="content__item"> 
-					<a href='item_card.html'>
+				<div class="item content__item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/knee_pad.jpg" alt="Item 4">
 						
 						<ul class="item__text"> 
@@ -81,8 +80,8 @@
 					</a> 
 				</div>
 				
-				<div class="content__item"> 
-					<a href='item_card.html'>
+				<div class="item content__item"> 
+					<a class="item__link" href='item_card.html'>
 						<img class="item__image" src="images/categories/volleyball/beach_net.jpg" alt="Item 5">
 						
 						<ul class="item__text"> 
@@ -114,7 +113,7 @@
 					<br />
 					<input type="checkbox" name="remember" value="true" checked> <span class="reg_check">remember me</span>
 					<br />
-					<input type="submit" name="signIn" value="Sign In" class="reg_input add_button"> 					
+					<input type="submit" name="signIn" value="Sign In" class="reg_input add-button"> 					
 				</form>
 				<p class="reg_text"><a href="#regWindow" title="Registration" class="reg_ref">register</a></p>
 			</div>
@@ -132,7 +131,7 @@
 					<br />
 					<input type="password" placeholder="password" class="reg_input">
 					<br />
-					<input type="submit" name="signIn" value="Register" class="reg_input add_button"> 					
+					<input type="submit" name="signIn" value="Register" class="reg_input add-button"> 					
 				</form>
 				<p class="reg_text"><a href="#loginWindow" title="Login" class="reg_ref">Sign In</a></p>
 			</div>
