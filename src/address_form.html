@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Categories </title>
+	<title> Address </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,33 +14,30 @@
 	<div class="body-wrapper">
 		<div class="content-wrapper">
 	
-			<div class="content-wrapper">
-				<div class="item content__item address_form">
+			<div class="content page__content page__content--in-address">
+				<div class="item content__item content__item--in-address">
 					<h1> Shipping address </h1>
-					<div> Country <input class="address_input" type="text"> </div>
-					<div> City <input class="address_input" type="text"> </div>
-					<div> Address <input class="address_input" type="text"> </div>
-					<div> ZIP <input class="address_input" type="text"> </div>
+					<div> Country <input class="item__input" type="text"> </div>
+					<div> City <input class="item__input" type="text"> </div>
+					<div> Address <input class="item__input" type="text"> </div>
+					<div> ZIP <input class="item__input" type="text"> </div>
 					<div> <input type="checkbox"> My shipping address is the same </div>
 				</div>
 				
-				<div class="item content__item address_form">
+				<div class="item content__item content__item--in-address">
 					<h1> Billing address </h1>
-					<div> Country <input class="address_input" type="text"> </div>
-					<div> City <input class="address_input" type="text"> </div>
-					<div> Address <input class="address_input" type="text"> </div>
-					<div> ZIP <input class="address_input" type="text"> </div>
+					<div> Country <input class="item__input" type="text"> </div>
+					<div> City <input class="item__input" type="text"> </div>
+					<div> Address <input class="item__input" type="text"> </div>
+					<div> ZIP <input class="item__input" type="text"> </div>
 					<div> <input type="checkbox"> My billing address is the same </div>
 				</div>
 				
-
-				
-			</div>
+				<div class="continue">
+					<input class="add-button add-button--to-pay" type="button" value="Continue" onClick="window.location.href = 'card.html';">
+				</div>
 			
-			<div>
-				<input class="add-button to_pay_button" type="button" value="Continue" onClick="window.location.href = 'card.html';">
 			</div>
-		
 		</div>
 		//= footer.html
 	</div>

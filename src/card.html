@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Categories </title>
+	<title> Cards </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,32 +14,34 @@
 	<div class="body-wrapper">
 		<div class="content-wrapper">
 		
-			<div class="content page__content cards">
+			<div class="content page__content page__content--in-address">
 
-				<div class="card_face">  
+				<div class="card-face">  
 					<div> 
-						<input class="cards_input" type="text"> 
+						<input class="card-face__input" type="text"> 
 					</div>
 					
 					<div> 
-						<input class="cards_input cards_date" type="month"> 
+						<input class="card-face__input card-face__input--date" type="month"> 
 					</div>
 							
 					<div> 
-						<input class="cards_input cards_username" type="text"> 
+						<input class="card-face__input card-face__input--username" type="text"> 
 					</div>
 					
 				</div>
 				
-				<div class="card_face card_back"> 
+				<div class="card-face card-face--back"> 
 					<div>
-						<input class="cards_input cards_pin" type="text">
+						<input class="card-face__input card-face__input--pin" type="text">
 					</div>
 				</div>
-			</div>
 			
-			<div>
-				<input class="add-button to_pay_button" type="button" value="Finish" onClick="window.location.href = 'categories.html';">
+			
+				<div class="continue">
+					<input class="add-button add-button--to-pay" type="button" value="Finish" onClick="window.location.href = 'categories.html';">
+				</div>
+				
 			</div>
 		
 		</div>
