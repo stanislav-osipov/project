@@ -22,7 +22,7 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
+        js: 'src/js/*.js',
         style: 'src/style/style.scss',
         img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -96,8 +96,8 @@ gulp.task('build', [
     'html-build',
     'js-build',
     'style-build',
-    'fonts-build',
-    'image-build'
+    /*'fonts-build',*/
+    /*'image-build'*/
 ]);
 
 gulp.task('watch', function(){
